@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
   position: relative;
   background-image: radial-gradient(#ececec 1%, #6dd5fa, #2980b9);
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body header {
   display: flex;
@@ -18,7 +18,7 @@ body header h1 {
   margin-top: 10px;
   font-size: 75px;
   padding-left: 20px;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   color: #fff;
   line-height: 1;
 }
@@ -31,7 +31,7 @@ body table {
 body table th,
 body table td {
   text-align: center;
-  padding: 10px 28px;
+  padding: 10px 20px;
   border-radius: 5px;
 }
 body table tbody tr {
@@ -52,12 +52,12 @@ body .hexagon {
 body .hexagon img {
   position: absolute;
   top: -10vh;
-  height: 920px;
+  height: 810px;
   width: auto;
 }
 .cards {
   position: absolute;
-  top: 150px;
+  top: 115px;
   left: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -65,8 +65,9 @@ body .hexagon img {
   grid-gap: 12px;
 }
 .card {
-  height: 200px;
-  width: 150px;
+  height: 175px;
+  width: 125px;
+  padding: 4px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -107,8 +108,8 @@ body .hexagon img {
 }
 .input-box {
   position: absolute;
-  top: 250px;
-  right: 820px;
+  left: 750px;
+  top: 205px;
   padding: 40px;
   border: 3px solid #000;
   border-radius: 25px;
@@ -136,7 +137,7 @@ body .hexagon img {
   padding-bottom: 24px;
   border-radius: 5px;
   color: #fff;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   font-size: 22px;
   font-weight: bolder;
   letter-spacing: 3px;
@@ -161,7 +162,7 @@ body .hexagon img {
   padding-bottom: 5px;
   border-radius: 5px;
   color: #fff;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   font-size: 20px;
   font-weight: bolder;
   letter-spacing: 3px;
@@ -185,8 +186,8 @@ body .hexagon img {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 815px;
-  left: 857px;
+  top: 733px;
+  left: 812px;
   height: 30px;
   width: 30px;
   font-size: 15px;
