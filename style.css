@@ -296,19 +296,3 @@ body .hexagon img {
     opacity: 0.8;
   }
 }
-@keyframes pop-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes pop-out-dark {
-  from {
-    opacity: 0.8;
-  }
-  to {
-    opacity: 0;
-  }
-}

@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="calculator.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Stock Expert</title>
   </head>
@@ -174,7 +175,33 @@
         </div>
       </form>
     </div>
+    <div id="centering-container">
+      <div id="container">
+        <div id="display-container">
+          <input type="text" id="display-calculations" />
+          <input type="text" id="display-result" />
+        </div>
+        <button class="btn-calc" id="clear">Clear</button>
+        <button class="btn-calc numbers" id="1">1</button>
+        <button class="btn-calc numbers" id="2">2</button>
+        <button class="btn-calc numbers" id="3">3</button>
+        <button class="btn-calc operator" id="add">+</button>
+        <button class="btn-calc numbers" id="4">4</button>
+        <button class="btn-calc numbers" id="5">5</button>
+        <button class="btn-calc numbers" id="6">6</button>
+        <button class="btn-calc operator" id="subtract">-</button>
+        <button class="btn-calc numbers" id="7">7</button>
+        <button class="btn-calc numbers" id="8">8</button>
+        <button class="btn-calc numbers" id="9">9</button>
+        <button class="btn-calc operator" id="multiply">*</button>
+        <button class="btn-calc operator" id="decimal">.</button>
+        <button class="btn-calc numbers" id="0">0</button>
+        <button class="btn-calc equal" id="equal">=</button>
+        <button class="btn-calc operator" id="divide">/</button>
+      </div>
+    </div>
     <div class="stock">2.5</div>
+    <script src="js/calculator.js"></script>
     <script src="js/random.js"></script>
     <script src="js/ui.js"></script>
   </body>
