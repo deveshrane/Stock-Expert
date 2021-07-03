@@ -25,23 +25,29 @@ const buyContainer = document.querySelector('.buy-container');
 const sellContainer = document.querySelector('.sell-container');
 const body = document. querySelector('body');
 const calculator = document.querySelector('#centering-container');
+const status = document.querySelector('.status');
+
 buy.addEventListener('click', () => {
     buyContainer.style.display = 'block';
     body.className = 'dark';
     calculator.style.display = 'flex';
+    status.style.right = '70rem';
 });
 sell.addEventListener('click', () => {
     sellContainer.style.display = 'block';
     body.className = 'dark';
     calculator.style.display = 'flex';
+    status.style.right = '70rem';
 });
 cross[0].addEventListener('click', () => {
     buyContainer.style.display = 'none';
     body.classList.remove('dark');
     calculator.style.display = 'none';
+    status.style.right = '3.125rem';
 });
 cross[1].addEventListener('click', () => {
     sellContainer.style.display = 'none';
     body.classList.remove('dark');
     calculator.style.display = 'none';
+    status.style.right = '3.125rem';
 });

@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 16px;
@@ -195,6 +196,7 @@ body .hexagon img {
   align-items: center;
   background-color: #fff;
   border-radius: 1.563rem;
+  z-index: 100;
 }
 .status h2 {
   border-bottom: 0.063rem dashed #c4c4c4;
