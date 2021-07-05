@@ -1,7 +1,8 @@
-class Calculations{
+class Random{
     constructor() {
     this.cards = [];
-    this.company = ['HDFC', 'Tata', 'Reliance', 'Infosys', 'Apple', 'Tesla'];
+    this.company = ['HDFC', 'Tata', 'Reliance', 'Infosys', 'Apple', 'Tesla', 'Currency'];
+    this.special = ['Share Suspend', 'Loan Stock Matured', 'Debenture', 'Right Issue'];
     }
     randomDeviationPrice() {
         while(1>0) {
@@ -16,19 +17,30 @@ class Calculations{
         return rand;
     }
     randomCompanyName() {
-        let rand = Math.floor(Math.random()*6);
+        let rand = Math.floor(Math.random()*7);
         return this.company[rand];
+    }
+    specialCard() {
+        let rand = Math.floor(Math.random()*4);
+        return this.special[rand];
     }
     createCardsObject() {
         for(let i=0;i<=9;i++) {
-            this.cards.push({
-                price: 0,
-                sign: 0,
-                company: ""
-            });
-            this.cards[i].price = this.randomDeviationPrice();
-            this.cards[i].sign= this.randomDeviationSign();
-            this.cards[i].company = this.randomCompanyName();
+            if(i<=8) {
+                this.cards.push({
+                    price: 0,
+                    sign: 0,
+                    company: ""
+                });
+                this.cards[i].price = this.randomDeviationPrice();
+                this.cards[i].sign= this.randomDeviationSign();
+                this.cards[i].company = this.randomCompanyName();
+            } else {
+                this.cards.push({
+                    special: ""
+                });
+                this.cards[i].special = this.specialCard();
+            }
         }
     }
     bubbleSort()

@@ -78,6 +78,18 @@ body .hexagon img {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 0.625rem;
+  text-align: center;
+}
+.card .btn {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  background-color: rgb(252, 239, 67);
+}
+.card .box-buy {
+  width: 80%;
+  background-color: rgb(131, 122, 0);
 }
 .card h2 {
   font-size: 1.25rem;
@@ -148,6 +160,7 @@ body .hexagon img {
   font-weight: bolder;
   letter-spacing: 0.188rem;
   z-index: 2;
+  text-align: center;
 }
 .btn:hover {
   cursor: pointer;
@@ -226,7 +239,7 @@ body .hexagon img {
   border-radius: 1.563rem;
   z-index: 100;
   display: none;
-  animation: 0.3s ease-in pop-in;
+  animation: 0.5s ease-in pop-in;
 }
 .buy-container .fa-times-circle,
 .sell-container .fa-times-circle {
@@ -265,8 +278,6 @@ body .hexagon img {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 38rem;
-  left: 39.875rem;
   height: 1.875rem;
   width: 1.875rem;
   font-size: 0.938rem;
